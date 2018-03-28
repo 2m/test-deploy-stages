@@ -7,6 +7,7 @@ jdk:
 jobs:
   include:
     - script: test
+    - script: ^^1.0.0 test
 
     - stage: deploy-sbt-0.13
       script: skip

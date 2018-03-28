@@ -1,0 +1,30 @@
+languge: scala
+
+jdk:
+  - openjdk7
+  - oraclejdk8
+
+jobs:
+  include:
+    - script: test
+
+    - stage: deploy-sbt-0.13
+      script: skip
+      jdk: openjdk7
+      deploy:
+        provider: script
+        script: sbt publish
+        on:
+          tags: true
+          repo: 2m/test-deploy-stages
+
+    - stage: deploy-sbt-1.0
+      script: skip
+      jdk: oraclejdk8
+      deploy:
+        provider: script
+        script: sbt ^^1.0.0 publish
+        on:
+          tags: true
+          repo: 2m/test-deploy-stages
+

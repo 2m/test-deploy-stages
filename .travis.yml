@@ -1,4 +1,4 @@
-languge: scala
+language: scala
 
 jdk:
   - openjdk7
@@ -27,4 +27,9 @@ jobs:
         on:
           tags: true
           repo: 2m/test-deploy-stages
+
+env:
+  global:
+    - secure: "4eUtDcw8D0vFO3pwnMuXbSJ61cRepXh8wVNEwX9PrbSkZBCANRVBw2UqwVzIYw9E3NgWI9W0A3wWIyNCs83W8A6Mzg3h6BZkefSE38ORajjDUfnXqTimHCJprNlkyUS6W2D8qQ4h22ZfXAHHNZwM4jXvT2e4OybII3H4NpqSD3u7XFHlrWyaLs36vM1wxj9w0//81Ncf17Yjlx4qqclXl7OzH2wxOgKC2BSn5SSMFa80m5pzppXumyNwSNNjEsp0P1k7wvYC00iv7Ib9HIOTzvT8OEzF+ZovPxQ+d++qsZ7a4VLDg6A1vapv8/6VjsEtgJF45deWqduEuN1q48lRITQGNa5/U9gqnZlbu2QYe4MmC1VOeSqi75Dn7UqCwALO5EKD1qtJgoovlrQ8aXPKpBtW59vGHjGfYpz3oy3Rp61f7U9EBX4EcdNZeG5R3TabrFPYeOwlroIETJa398FJJLXNbUIwnSWvEt9poEgRCYwdp8u8IcFhaUk5XudvUzDxj4FJ0da5CJskm27cIFmIHm8oh3qfEBjLhvrHdl9zCcb/xaglkCI22s4mw+iTxipUp/nZET1aw6rR/DwULF0ezq/iG6zwgDhi50mz+nVwa53HodZ+fenW7q9JxDpZ8oioR5hNTGBEreCI8NKN3OW/3MGaC4Z8HPUbhUV1rIWTLyc="
+    - secure: "PDJUMnMThDialdSEMubkqDIShohCoDhmxPxEcWdAFVgfHMjYc5TVtR+MVcS7SRGaJAAz7WzuxpRZjtiTOg2JnCYw5w32/pMyopQ7DdtUC97VJ6q3E/W53s3TtRPXM/xSvusBxYyy7NGqw66HXlO9FfO8GprqTkKYXCspYupFGVRpSG1fq9kbZyim08APc1VoGzr+08UG+phxHS0u+9agF6plL3e6FzNRNa2E8FY4xngQKyHDmYtPARFs9fti3yLdYTNleE2KlOaEe4I6ol178GiQALLWFwL+TwbU0xouSAgaAfibbUXrXodvVlvUPzJIwBzlG7dmMPku+BF7O8qen/tMzmv40bIJEdrADIor6hHRuwz/PgLPu/yJ8C6zd6ECuh/2VM9qQg8pLroqwMdeJHS9YnJkkuiNjAcqM2nI43lba2u+I59lVN2W0zs2UGhjmk2CTEnixuTMtjzqaxY1f/U/vNVj1xk4Ch1/A5t5bHeX0r3bGohNsn3nyy1vY3cwMyFgB8hDfJ96MoRQZ6Y00DSU4Ds3oHok93eHtK/ZO/brHtcQWCeA3nHC6okUePbNl1SAGlrn5LSudykLf9Wfk/qCzQngr8iQ+pgMUO01+Z5xAyea8fzCor2tOWuUKcjQDBRmHR8U3s8yYQEkF7U4jHRqRszCMM/Jm6dJ0s4/QuA="
 

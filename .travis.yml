@@ -1,9 +1,5 @@
 language: scala
 
-jdk:
-  - openjdk7
-  - oraclejdk8
-
 jobs:
   include:
     - stage: test

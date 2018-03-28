@@ -10,11 +10,11 @@ jobs:
       script: sbt test
       jdk: openjdk7
     
-    - stage: test
+    - stage: test-sbt-1.0
       script: sbt ^^1.0.0 test
       jdk: oraclejdk8
 
-    - stage: deploy-sbt-0.13
+    - stage: deploy
       script: skip
       jdk: openjdk7
       deploy:

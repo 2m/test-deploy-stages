@@ -34,6 +34,15 @@ jobs:
           tags: true
           repo: 2m/test-deploy-stages
 
+before_cache:
+  - find $HOME/.ivy2 -name "ivydata-*.properties" -print -delete
+  - find $HOME/.sbt  -name "*.lock"               -print -delete
+
+cache:
+  directories:
+    - $HOME/.ivy2/cache
+    - $HOME/.sbt/boot
+
 env:
   global:
     - secure: "4eUtDcw8D0vFO3pwnMuXbSJ61cRepXh8wVNEwX9PrbSkZBCANRVBw2UqwVzIYw9E3NgWI9W0A3wWIyNCs83W8A6Mzg3h6BZkefSE38ORajjDUfnXqTimHCJprNlkyUS6W2D8qQ4h22ZfXAHHNZwM4jXvT2e4OybII3H4NpqSD3u7XFHlrWyaLs36vM1wxj9w0//81Ncf17Yjlx4qqclXl7OzH2wxOgKC2BSn5SSMFa80m5pzppXumyNwSNNjEsp0P1k7wvYC00iv7Ib9HIOTzvT8OEzF+ZovPxQ+d++qsZ7a4VLDg6A1vapv8/6VjsEtgJF45deWqduEuN1q48lRITQGNa5/U9gqnZlbu2QYe4MmC1VOeSqi75Dn7UqCwALO5EKD1qtJgoovlrQ8aXPKpBtW59vGHjGfYpz3oy3Rp61f7U9EBX4EcdNZeG5R3TabrFPYeOwlroIETJa398FJJLXNbUIwnSWvEt9poEgRCYwdp8u8IcFhaUk5XudvUzDxj4FJ0da5CJskm27cIFmIHm8oh3qfEBjLhvrHdl9zCcb/xaglkCI22s4mw+iTxipUp/nZET1aw6rR/DwULF0ezq/iG6zwgDhi50mz+nVwa53HodZ+fenW7q9JxDpZ8oioR5hNTGBEreCI8NKN3OW/3MGaC4Z8HPUbhUV1rIWTLyc="
